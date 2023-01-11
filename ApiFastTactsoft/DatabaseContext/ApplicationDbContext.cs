@@ -8,6 +8,7 @@ namespace ApiFastTactsoft.DatabaseContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options)
         {
+
         }
 
         //add-migration CreateStudentTable -o Data/Migrations
@@ -15,5 +16,6 @@ namespace ApiFastTactsoft.DatabaseContext
         public DbSet<Customer> customer { get; set; }
         public DbSet<Post> post { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Products> products { get; set; }
     }
 }

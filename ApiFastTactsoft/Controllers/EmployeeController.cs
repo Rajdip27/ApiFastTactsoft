@@ -55,9 +55,10 @@ namespace ApiFastTactsoft.Controllers
         {
             try
             {
-                var Result = await _dbContext.Employees.FindAsync(id);
-                if(Result == null) return NotFound();
+                
+                if(id != employee.EmployeeId) return NotFound();
                 _dbContext.Entry(employee).State = EntityState.Modified;
+                await _dbContext.SaveChangesAsync();
                 return NoContent();
 
             }
