@@ -12,6 +12,7 @@ namespace ApiFastTactsoft.DatabaseContext
 
         //add-migration CreateStudentTable -o Data/Migrations
         public DbSet<Student> students { get; set; }
-         public DbSet<Customer> customer { get; set; }
+        public DbSet<Customer> customer { get; set; }
+        public DbSet<Post> post { get; set; }
     }
 }
