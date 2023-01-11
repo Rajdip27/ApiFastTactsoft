@@ -14,5 +14,6 @@ namespace ApiFastTactsoft.DatabaseContext
         public DbSet<Student> students { get; set; }
         public DbSet<Customer> customer { get; set; }
         public DbSet<Post> post { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
 }

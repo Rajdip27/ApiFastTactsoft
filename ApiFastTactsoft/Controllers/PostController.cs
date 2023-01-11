@@ -79,7 +79,7 @@ namespace ApiFastTactsoft.Controllers
                 if(pt== null) return BadRequest();
                 _dbContext.post.Remove(pt);
                 await _dbContext.SaveChangesAsync();
-                return NoContent();
+                return NoContent(); 
 
             }
             catch (Exception ex)
