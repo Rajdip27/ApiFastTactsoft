@@ -17,5 +17,6 @@ namespace ApiFastTactsoft.DatabaseContext
         public DbSet<Post> post { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Products> products { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
