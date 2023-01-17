@@ -2,65 +2,63 @@
 using ApiFastTactsoft.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiFastTactsoft.Controllers
 {
     [Route("/[controller]/[action]")]
     [ApiController]
-    public class CategoryController : ControllerBase
+    public class OrderController : ControllerBase
     {
-      private readonly   ApplicationDbContext _dbContext;
-        public CategoryController(ApplicationDbContext dbContext)
+      private readonly  ApplicationDbContext _dbContext;
+        public OrderController(ApplicationDbContext dbContext)
         {
-            _dbContext = dbContext;
+            _dbContext = dbContext; 
         }
         [HttpGet]
-        public async Task<IEnumerable<Category>> GetAll()
+        public async  Task<IEnumerable<Order>> GetAll()
         {
-            return (await _dbContext.Categories.ToListAsync());
+            return await _dbContext.Orders.ToListAsync();
         }
         [HttpGet]
         public async Task<IActionResult> GetById(int id)
         {
             try
             {
-                var Result=await _dbContext.Categories.FindAsync(id);
-                return Result ==null?NotFound():Ok(Result);
+                if(id == null)
+                {
+                    return NotFound();
+                }
+                var order = await _dbContext.Orders.FindAsync(id);
+                return order == null ? NotFound() : Ok(order);
 
-            }
-            catch (Exception ex)
+            }catch(Exception ex)
             {
                 return BadRequest(ex.Message);
             }
         }
         [HttpPost]
-        public async Task<IActionResult> Create(Category category)
+        public async Task<IActionResult> Create(Order order)
         {
-            try
-            {
-                await _dbContext.Categories.AddAsync(category);
+            try { 
+                await _dbContext.Orders.AddAsync(order);
                 await _dbContext.SaveChangesAsync();
-                return CreatedAtAction(nameof(GetById), new { id = category.CategoryId }, category);
-
-            }
-            catch(Exception ex)
+                return CreatedAtAction (nameof(GetById), new {id=order.Id},order);
+            }catch(Exception ex)
             {
                 return BadRequest(ex.Message);
             }
-
         }
         [HttpPut]
-        public async Task<IActionResult> Edit(int id, Category category)
+        public async Task<IActionResult> Edit(int id, Order order)
         {
             try
             {
-                if (id != category.CategoryId)
+                if (id != order.Id)
                 {
                     return NotFound();
                 }
-                _dbContext.Entry(category).State = EntityState.Modified;
+                _dbContext.Entry(order).State = EntityState.Modified;
                 await _dbContext.SaveChangesAsync();
                 return NoContent();
 
@@ -75,12 +73,12 @@ namespace ApiFastTactsoft.Controllers
         {
             try
             {
-                var Result=await _dbContext.Categories.FindAsync(id);
-                if (Result == null)
+                var order = await _dbContext.Orders.FindAsync(id);
+                if(order == null)
                 {
                     return NotFound();
                 }
-                _dbContext.Entry(Result).State = EntityState.Deleted;
+                _dbContext.Entry(order).State = EntityState.Deleted;
                 await _dbContext.SaveChangesAsync();
                 return NoContent();
 

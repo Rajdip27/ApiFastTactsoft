@@ -19,5 +19,6 @@ namespace ApiFastTactsoft.DatabaseContext
         public DbSet<Products> products { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
 }
