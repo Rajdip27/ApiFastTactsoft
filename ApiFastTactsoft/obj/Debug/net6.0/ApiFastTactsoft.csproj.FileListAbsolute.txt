@@ -134,3 +134,7 @@ C:\Users\User\Desktop\MyApi\ApiFastTactsoft\ApiFastTactsoft\bin\Debug\net6.0\New
 C:\Users\User\Desktop\MyApi\ApiFastTactsoft\ApiFastTactsoft\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
 C:\Users\User\Desktop\MyApi\ApiFastTactsoft\ApiFastTactsoft\bin\Debug\net6.0\Swashbuckle.AspNetCore.Newtonsoft.dll
 C:\Users\User\Desktop\MyApi\ApiFastTactsoft\ApiFastTactsoft\bin\Debug\net6.0\Swashbuckle.AspNetCore.ReDoc.dll
+C:\Users\User\Desktop\MyApi\ApiFastTactsoft\ApiFastTactsoft\bin\Debug\net6.0\System.Web.Cors.dll
+C:\Users\User\Desktop\MyApi\ApiFastTactsoft\ApiFastTactsoft\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\User\Desktop\MyApi\ApiFastTactsoft\ApiFastTactsoft\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\User\Desktop\MyApi\ApiFastTactsoft\ApiFastTactsoft\bin\Debug\net6.0\System.Web.Http.Cors.dll

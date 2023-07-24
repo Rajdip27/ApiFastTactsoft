@@ -70,7 +70,7 @@ namespace ApiFastTactsoft.Controllers
                 return BadRequest(ex.Message);
             }
         }
-        [HttpDelete]
+        [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
             try
