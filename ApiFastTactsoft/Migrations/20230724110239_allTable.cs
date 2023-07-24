@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ApiFastTactsoft.Migrations
 {
-    public partial class CreateAllTable : Migration
+    public partial class allTable : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

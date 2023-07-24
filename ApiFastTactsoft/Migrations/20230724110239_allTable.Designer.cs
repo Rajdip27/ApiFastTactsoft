@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ApiFastTactsoft.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230724064311_CreateAllTable")]
-    partial class CreateAllTable
+    [Migration("20230724110239_allTable")]
+    partial class allTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
