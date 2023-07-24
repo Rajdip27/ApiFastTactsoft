@@ -9,11 +9,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace ApiFastTactsoft.Data.Migrations
+namespace ApiFastTactsoft.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230114183021_CreateUserTable")]
-    partial class CreateUserTable
+    [Migration("20230724064311_CreateAllTable")]
+    partial class CreateAllTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,6 +23,23 @@ namespace ApiFastTactsoft.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("ApiFastTactsoft.Models.Category", b =>
+                {
+                    b.Property<int>("CategoryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryId"), 1L, 1);
+
+                    b.Property<string>("CategoryName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CategoryId");
+
+                    b.ToTable("Categories");
+                });
 
             modelBuilder.Entity("ApiFastTactsoft.Models.Customer", b =>
                 {
@@ -71,6 +88,42 @@ namespace ApiFastTactsoft.Data.Migrations
                     b.HasKey("EmployeeId");
 
                     b.ToTable("Employees");
+                });
+
+            modelBuilder.Entity("ApiFastTactsoft.Models.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("OrderNo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("ApiFastTactsoft.Models.Post", b =>

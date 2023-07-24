@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Api\\ApiFastTactsoft\\ApiFastTactsoft\\ApiFastTactsoft.csproj": {}
+    "C:\\Users\\User\\Desktop\\MyApi\\ApiFastTactsoft\\ApiFastTactsoft\\ApiFastTactsoft.csproj": {}
   },
   "projects": {
-    "E:\\Api\\ApiFastTactsoft\\ApiFastTactsoft\\ApiFastTactsoft.csproj": {
+    "C:\\Users\\User\\Desktop\\MyApi\\ApiFastTactsoft\\ApiFastTactsoft\\ApiFastTactsoft.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Api\\ApiFastTactsoft\\ApiFastTactsoft\\ApiFastTactsoft.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\MyApi\\ApiFastTactsoft\\ApiFastTactsoft\\ApiFastTactsoft.csproj",
         "projectName": "ApiFastTactsoft",
-        "projectPath": "E:\\Api\\ApiFastTactsoft\\ApiFastTactsoft\\ApiFastTactsoft.csproj",
-        "packagesPath": "C:\\Users\\Santnu\\.nuget\\packages\\",
-        "outputPath": "E:\\Api\\ApiFastTactsoft\\ApiFastTactsoft\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\MyApi\\ApiFastTactsoft\\ApiFastTactsoft\\ApiFastTactsoft.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\MyApi\\ApiFastTactsoft\\ApiFastTactsoft\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Santnu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.305\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +57,19 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Newtonsoft": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.ReDoc": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -73,6 +83,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.19, 6.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.19, 6.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.19, 6.0.19]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.19, 6.0.19]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -81,7 +109,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
         }
       }
     }
