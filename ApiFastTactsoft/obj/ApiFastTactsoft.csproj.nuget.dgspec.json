@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\MyApi\\ApiFastTactsoft\\ApiFastTactsoft\\ApiFastTactsoft.csproj": {}
+    "C:\\Users\\User\\Desktop\\31-07-2023\\ApiFastTactsoft\\ApiFastTactsoft\\ApiFastTactsoft.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\MyApi\\ApiFastTactsoft\\ApiFastTactsoft\\ApiFastTactsoft.csproj": {
+    "C:\\Users\\User\\Desktop\\31-07-2023\\ApiFastTactsoft\\ApiFastTactsoft\\ApiFastTactsoft.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\MyApi\\ApiFastTactsoft\\ApiFastTactsoft\\ApiFastTactsoft.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\31-07-2023\\ApiFastTactsoft\\ApiFastTactsoft\\ApiFastTactsoft.csproj",
         "projectName": "ApiFastTactsoft",
-        "projectPath": "C:\\Users\\User\\Desktop\\MyApi\\ApiFastTactsoft\\ApiFastTactsoft\\ApiFastTactsoft.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\31-07-2023\\ApiFastTactsoft\\ApiFastTactsoft\\ApiFastTactsoft.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\MyApi\\ApiFastTactsoft\\ApiFastTactsoft\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\31-07-2023\\ApiFastTactsoft\\ApiFastTactsoft\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,7 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.305\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,10 +41,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNet.WebApi.Cors": {
-              "target": "Package",
-              "version": "[5.2.9, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.12, )"
@@ -90,19 +86,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.19, 6.0.19]"
+              "version": "[6.0.20, 6.0.20]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.19, 6.0.19]"
+              "version": "[6.0.20, 6.0.20]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.19, 6.0.19]"
+              "version": "[6.0.20, 6.0.20]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.19, 6.0.19]"
+              "version": "[6.0.20, 6.0.20]"
             }
           ],
           "frameworkReferences": {
@@ -113,7 +109,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
